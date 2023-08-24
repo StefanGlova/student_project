@@ -9,3 +9,5 @@ class Student(models.Model):
     field_of_study = models.CharField(max_length=50)
     gpa = models.FloatField()
 
+    def __str__(self):
+        return f"student: {self.first_name} {self.last_name}"
