@@ -40,7 +40,7 @@ def add(request):
             })
     else:
         form = StudentForm()
-    return render(request, 'student/add.html', {
+    return render(request, 'students/add.html', {
         'form': StudentForm()
     })
     
